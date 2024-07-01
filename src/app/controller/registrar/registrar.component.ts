@@ -4,8 +4,6 @@ import { RegistrarService } from '../../service/registrar.service';
 
 @Component({
   selector: 'app-registrar',
-  standalone: true,
-  imports: [],
   templateUrl: './registrar.component.html',
   styleUrl: './registrar.component.css'
 })

@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './controller/login/login.component';
+import { RegistrarComponent } from './controller/registrar/registrar.component';
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegistrarComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,6 @@ import { LoginComponent } from './controller/login/login.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [RegistrarComponent]
 })
 export class AppModule { }
