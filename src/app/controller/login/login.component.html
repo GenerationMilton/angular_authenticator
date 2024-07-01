@@ -1,6 +1,4 @@
-
-<div id="login">
-  <h3 class="text-center text-white pt-5">Autenticación de usuarios</h3>
+<div id="login" background="carrito.jpg">
   <div class="container">
       <div id="login-row" class="row justify-content-center align-items-center">
           <div id="login-column" class="col-md-6">
@@ -8,19 +6,19 @@
                   <form id="login-form" class="form" action="" method="post">
                       <h3 class="text-center text-info">Autenticación de usuarios</h3>
                       <div class="form-group">
-                          <label class="text-info">Username:</label><br>
-                          <input type="text" name="user" [(ngModel)]="user" class="form-control">
+                          <label for="username" class="text-info">Username:</label><br>
+                          <input type="text" name="usuario" [(ngModel)]="user" class="form-control">
                       </div>
                       <div class="form-group">
-                          <label class="text-info">Password:</label><br>
-                          <input type="password" name="password"[(ngModel)]="password" class="form-control">
+                          <label for="password" class="text-info">Password:</label><br>
+                          <input type="text" name="pass" [(ngModel)]="password" class="form-control">
                       </div>
                       <div class="form-group">
                           <br>
-                          <input type="button"(click)="login();"  class="btn btn-info btn-md" value="Entrar"><br>
+                          <input type="button"  (click)="login()" class="btn btn-info btn-md" value="Entrar"><br>
                       </div>
                       <div id="register-link" class="text-right">
-                        <a class="text-info">Registrese aquí</a>
+                        <a routerLink="/registrese" class="text-info">Registrese aquí</a>
                       </div>
                   </form>
               </div>
