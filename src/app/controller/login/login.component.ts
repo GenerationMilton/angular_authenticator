@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Customer } from '../../model/Customer';
 import { LoginService } from '../../service/login.service';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   user:string;
   password:string;
   customer:Customer;
   constructor(private loginService: LoginService){
 
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
   login(){
